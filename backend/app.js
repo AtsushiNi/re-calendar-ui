@@ -40,6 +40,6 @@ app.use(function(err, req, res, next) {
 
 // ポートの設定
 const port = process.env.PORT || 3001;
-add.listen(port, () => console.log(`Server running on port ${port}`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
 
 module.exports = app;
