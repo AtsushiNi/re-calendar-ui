@@ -2,18 +2,18 @@
 カレンダーアプリ
 
 # 起動方法
-1. フロントエンドのinstall
-```bash:frontend/
+1. fontend/ で実行
+```
 npm install
 ```
 
-2. バックエンドのinstall
-```bash:backend/
+2. backend/ で実行
+```
 npm install
 ```
 
-3. アプリケーションを起動
-```bash:./
+3. ./ で実行
+```
 npm install
 npm run dev
 ```
