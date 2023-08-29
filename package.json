@@ -1,0 +1,15 @@
+{
+  "name": "re-calendar-ui",
+  "version": "1.0.0",
+  "description": "カレンダーアプリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1",
+    "express-generator": "^4.16.1"
+  }
+}
