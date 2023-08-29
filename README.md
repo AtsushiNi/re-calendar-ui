@@ -3,17 +3,17 @@
 
 # 起動方法
 1. フロントエンドのinstall
-```frontend/
+```bash:frontend/
 npm install
 ```
 
 2. バックエンドのinstall
-```backend/
+```bash:backend/
 npm install
 ```
 
 3. アプリケーションを起動
-```./
+```bash:./
 npm install
 npm run dev
 ```
