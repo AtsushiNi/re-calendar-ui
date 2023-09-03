@@ -1,25 +1,20 @@
-import { useEffect, useState } from 'react'
-import './App.css';
+import {
+  Routes,
+  Route
+} from 'react-router-dom'
+
+import Calendar from './pages/Calendar'
+import { CalendarProvider } from './context/CalendarContext'
 
 const App = () => {
-  const url = "/users"
-  const [users, setUsers] = useState([])
-
-  useEffect(() => {
-    fetch(url, { method: "GET" })
-      .then(res => res.json())
-      .then(data => { setUsers(data) })
-      .catch(err => {
-        console.log(err)
-      })
-  }, [])
 
   return (
-    <div className="App">
-      <h1>Users</h1>
-      {users.map((user, index) => <div key={index}>{user.name}</div>)}
-    </div>
-  );
+    <CalendarProvider>
+      <Routes>
+        <Route path="/" element={<Calendar />} />
+      </Routes>
+    </CalendarProvider>
+  )
 }
 
 export default App;

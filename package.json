@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "backend": "nodemon ./backend/bin/www",
     "frontend": "PORT=3002 npm start --prefix frontend",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\" "
+    "start": "concurrently \"yarn run backend\" \"yarn run frontend\" "
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "concurrently": "^8.2.1",
     "create-react-app": "^5.0.1",
     "express-generator": "^4.16.1",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "react-router-dom": "^6.15.0"
   }
 }
