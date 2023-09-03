@@ -2,12 +2,12 @@
 カレンダーアプリ
 
 # 起動方法
-1. フロントエンドのinstall (fontend/ で以下を実行)
+1. フロントエンドのinstall (./fontend/ で以下を実行)
 ```
 yarn install
 ```
 
-2. バックエンドのinstall (backend/ で以下を実行)
+2. バックエンドのinstall (./backend/ で以下を実行)
 ```
 yarn install
 ```
