@@ -1,3 +1,7 @@
+// googleカレンダーのUIの色はモダンとクラシックの2種類がある
+// APIではクラシックしか提供されていないので、モダンモードの配色を
+// https://nstjp.com/memo/507.html
+// から取ってきた
 export const getColor = id => {
   const mainColors = {
     1: '#795548',

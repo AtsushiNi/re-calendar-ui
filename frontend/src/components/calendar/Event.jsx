@@ -7,6 +7,8 @@ import CircleIcon from '@mui/icons-material/Circle';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker'
 
+import { getColor } from '../calendar/Colors'
+
 const Event = props => {
   const { event } = props
 
@@ -25,7 +27,8 @@ const Event = props => {
   const theme = createTheme({
     palette: {
       calendar: {
-        main: event.color
+        // main: event.color
+        main: getColor(event.colorId).main
       },
       grey: {
         main: grey[700],
@@ -45,7 +48,8 @@ const Event = props => {
   }
 
   let eventStyle = {
-    backgroundColor: event.color,
+    // backgroundColor: event.color,
+    backgroundColor: getColor(event.colorId).main,
     borderColor: event.color,
     top: calculateY(event.startAt) + "px",
     height: height(event.startAt, event.endAt) - 2 + "px",

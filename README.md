@@ -1,5 +1,6 @@
 # 概要
 カレンダーアプリ
+[](readme-images/demo.mov)
 
 # 起動方法
 1. フロントエンドのinstall (./fontend/ で以下を実行)

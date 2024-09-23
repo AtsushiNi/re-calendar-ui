@@ -2,18 +2,19 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
+import { LocalizationProvider } from '@mui/x-date-pickers'
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 
-import Calendar from './pages/Calendar'
-import { CalendarProvider } from './context/CalendarContext'
+import Home from './pages/Home'
 
 const App = () => {
 
   return (
-    <CalendarProvider>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Routes>
-        <Route path="/" element={<Calendar />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-    </CalendarProvider>
+    </LocalizationProvider>
   )
 }
 
